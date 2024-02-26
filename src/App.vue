@@ -1,46 +1,41 @@
 <template>
-  <v-app>
-   <v-card>
     <v-layout fluid style="height: 100vh;">
-      <v-navigation-drawer expand-on-hover rail>
+      <v-app-bar :elevation="2.5" rounded>
+        <v-app-bar-title>Aplicación Básica: Imágenes, Chistes & To-dos</v-app-bar-title>
+      </v-app-bar>
+
+      <v-navigation-drawer expand-on-hover rail :width="275">
         <v-list>
-          <v-list-item
-            prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
-            title="Sandra Adams"
-            subtitle="sandra_a88@gmailcom"
+          <v-list-item 
+            prepend-icon="mdi-home"
+            title="Home"
+            subtitle="Welcome to Vuetify"
+            link to="/"
           ></v-list-item>
         </v-list>
 
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item
-            prepend-icon="mdi-tooltip-image"
-            title="My Files"
-            value="myfiles"
+          <v-list-item 
+            prepend-icon="mdi-tooltip-image" 
+            title="Imagen & Chiste" 
+            link to="/imagen"
           ></v-list-item>
-          <v-list-item
-            prepend-icon="mdi-account-multiple"
-            title="Shared with me"
-            value="shared"
-          ></v-list-item>
-          <v-list-item
-            prepend-icon="mdi-star"
-            title="Starred"
-            value="starred"
+
+          <v-list-item 
+            prepend-icon="mdi-order-bool-ascending-variant" 
+            title="To-Dos" 
+            link to="/tabla"
           ></v-list-item>
         </v-list>
       </v-navigation-drawer>
 
-      <v-main>
-      <router-view />
-    </v-main>
-    </v-layout>
-  </v-card>
+      <v-main><router-view/></v-main>
 
-  </v-app>
+    </v-layout>
 </template>
 
 <script setup>
-  //
+//
 </script>
