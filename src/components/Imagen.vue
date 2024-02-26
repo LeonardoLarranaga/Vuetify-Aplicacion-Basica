@@ -2,7 +2,9 @@
   <v-card
     :loading="loading"
     class="mx-auto my-12"
-    max-width="450"
+    max-width="550"
+    elevation="5"
+    variant="tonal"
   >
 
   <template v-slot:loader="{ isActive }">
@@ -30,7 +32,7 @@
     <v-card-actions>
       <v-btn
         color="indigo-darken-4"
-        variant="tonal"
+        variant="flat"
         @click="recargar"
         block rounded="XL"
         prepend-icon="mdi-dice-3"
@@ -56,7 +58,7 @@
     methods: {
       recargar() {
         this.loading = true
-        this.imagen = `https://picsum.photos/450/250?random=${Math.random()}`
+        this.imagen = `https://picsum.photos/550/250?random=${Math.random()}`
         this.fetchChiste()
       },
 

@@ -1,7 +1,7 @@
 <template>
     <v-layout fluid style="height: 100vh;">
-      <v-app-bar :elevation="2.5" rounded>
-        <v-app-bar-title class="font-weight-bold">Aplicación Básica: Imágenes, Chistes & To-dos</v-app-bar-title>
+      <v-app-bar :elevation="1.2" rounded>
+        <v-app-bar-title class="font-weight-bold text-indigo-darken-4">Aplicación Básica: Imágenes, Chistes & To-Dos</v-app-bar-title>
       </v-app-bar>
 
       <v-navigation-drawer expand-on-hover rail :width=220>
