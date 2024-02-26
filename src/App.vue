@@ -4,7 +4,7 @@
         <v-app-bar-title class="font-weight-bold text-indigo-darken-4">Aplicación Básica: Imágenes, Chistes & To-Dos</v-app-bar-title>
       </v-app-bar>
 
-      <v-navigation-drawer expand-on-hover rail :width=220>
+      <v-navigation-drawer expand-on-hover rail :width=220 style="transform: translateX(0%)">
         <v-list>
           <v-list-item 
             prepend-icon="mdi-home"
